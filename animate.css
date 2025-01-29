@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:black;
+    font-family:'Space Grotesk';
+
+
+}
+
+.key{
+    margin:100px 20px;
+
+}
+.Section_top{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    justify-content:center;
+    
+}
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-transform:uppercase;
+}
+.content a{
+    background:grey;
+    padding:10px  24px;
+    text-decoration:none;
+    border-radius:20px;
+    font-size:20px;
+}
+.content a:hover{
+    background:#034e88;
+    color:white;
+}
+.index{
+    text-align:center;
+}
+h1{
+    margin:0;
+    padding:0;
+    color:skyblue;
+    font-size:10rem;
+
+}
+h1 span{
+    display:table-cell;
+    margin:0;
+    padding:0;
+    animation:animate 2s linear infinite;
+
+
+}
+h1 span:nth-child(1)
+{
+   animation-delay :0s;
+}
+h1 span:nth-child(2)
+{
+   animation-delay :0.25s;
+}
+h1 span:nth-child(3)
+{
+   animation-delay :0.5s;
+}
+h1 span:nth-child(4)
+{
+   animation-delay :1s;
+}
+h1 span:nth-child(5)
+{
+   animation-delay :1.5s;
+}
+h1 span:nth-child(6)
+{
+   animation-delay :1.75s;
+}
+h1 span:nth-child(7)
+{
+   animation-delay :2s;
+}
+h1 span:nth-child(8)
+{
+   animation-delay :2.5s;
+}
+h1 span:nth-child(9)
+{
+   animation-delay :2.75s;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        color:linear-gradient(black);
+        filter:blur(2px);
+        text-shadow:0 0 10px #00b3ff,
+                   0 0 20px black,
+                   0 0 40px #00b3ff,
+                   0 0 80px black,
+                   0 0 120px #00b3ff,
+                   0 0 200px black,
+                   0 0 300px #00b3ff,
+                   0 0 400px black;
+
+    }
+    5%,95%
+    {
+        color:linear-gradient(red,black);
+        filter:blur(0px);
+        
+
+    }
+}
